@@ -1,0 +1,2 @@
+name=input()
+pr(f"Salom {name} hush kelibsiz)

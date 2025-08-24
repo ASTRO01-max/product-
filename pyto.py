@@ -28,7 +28,7 @@ class Product:
 
 class Basket:
     def __init__(self):
-        self.products = []
+        self.products = {}
 
     def add(self, product):
         for i in self.products:
@@ -82,16 +82,12 @@ b.add(pr4)
 
 print("Products:")
 print(f"Total: {b.total()} USD")
-# b.view()
 b.remove("iPhone 15 Pro", 3)
 print("\n3 ta iPhone 15 Pro o'chirildi:")
-# b.view()
-
 b.remove("iPhone 14", 5)
 print("\niPhone 14 qisman o'chirildi:")
-# b.view()
-
 basket_dict = b.to_dict()
 print("\nBasket as dictionary:")
 print(basket_dict)
 b.view()
+
